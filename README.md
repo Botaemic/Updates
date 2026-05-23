@@ -80,7 +80,7 @@ https://botaemic.github.io/Updates/
 Artifacts can use paths relative to `baseUrl`:
 
 ```json
-"url": "firmware/soundcontroller/releases/0.1.2/SoundController.hex"
+"url": "firmware/soundcontroller/releases/0.1.3/SoundController.hex"
 ```
 
 They can also use full HTTPS URLs, for example GitHub Release assets:

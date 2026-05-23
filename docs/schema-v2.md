@@ -104,16 +104,16 @@ Artifacts with an empty `sha256` must not be installed or flashed.
       "targetType": "0x01",
       "name": "SoundController USB Firmware",
       "category": "firmware",
-      "latestVersion": "0.1.2",
-      "latestVersionNumber": "0x00000102",
-      "releaseNotes": "firmware/soundcontroller/releases/0.1.2/release-notes.md",
+      "latestVersion": "0.1.3",
+      "latestVersionNumber": "0x00000103",
+      "releaseNotes": "firmware/soundcontroller/releases/0.1.3/release-notes.md",
       "artifacts": [
         {
           "type": "intelHex",
           "fileName": "SoundController.hex",
-          "url": "firmware/soundcontroller/releases/0.1.2/SoundController.hex",
-          "sha256": "71ebb328700c255de8a3d4cf6f8f01863e649321ad39c1ffc355efc7980e0f2b",
-          "sizeBytes": 24743
+          "url": "firmware/soundcontroller/releases/0.1.3/SoundController.hex",
+          "sha256": "715e43d3a194ddf6302f842cefee2f28978ed058fc093a00c505c1453640a64e",
+          "sizeBytes": 24993
         }
       ]
     }
