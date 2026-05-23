@@ -26,6 +26,7 @@ Recommended repository shape on GitHub:
 
 ```text
 Botaemic/Updates
+  README.md
   manifest.json
   app/
     soundcontroller/
@@ -33,18 +34,26 @@ Botaemic/Updates
   firmware/
     soundcontroller/
       releases/
+  docs/
+    index.html
 ```
 
-If GitHub Pages is enabled for the repository, SoundController should use:
+GitHub Pages can publish the neutral landing page from the `docs` folder:
 
 ```text
-https://botaemic.github.io/Updates/manifest.json
+https://botaemic.github.io/Updates/
 ```
 
-If GitHub Pages is not enabled yet, SoundController can use the raw GitHub URL:
+Because GitHub Pages is publishing from `docs`, top-level feed files are not served by that Pages URL. SoundController should use the raw GitHub manifest URL:
 
 ```text
 https://raw.githubusercontent.com/Botaemic/Updates/main/manifest.json
+```
+
+If GitHub Pages is later changed to publish from the repository root, SoundController can use:
+
+```text
+https://botaemic.github.io/Updates/manifest.json
 ```
 
 
