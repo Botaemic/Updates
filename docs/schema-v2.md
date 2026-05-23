@@ -28,8 +28,8 @@ Target types:
 SoundController currently uses:
 
 ```text
-0x00010002 SoundController Companion App
-0x00010101 SoundController USB Firmware, hardware variant 1
+0x00010002 SoundController App
+0x00010101 SoundController USB Firmware
 ```
 
 ## Version Number
@@ -102,7 +102,7 @@ Artifacts with an empty `sha256` must not be installed or flashed.
       "projectId": "0x0001",
       "hardwareVariant": "0x01",
       "targetType": "0x01",
-      "name": "SoundController USB Firmware - Hardware Variant 1",
+      "name": "SoundController USB Firmware",
       "category": "firmware",
       "latestVersion": "0.1.2",
       "latestVersionNumber": "0x00000102",

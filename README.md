@@ -44,8 +44,8 @@ Target types:
 Current SoundController product IDs:
 
 ```text
-0x00010002 SoundController Companion App
-0x00010101 SoundController USB Firmware, hardware variant 1
+0x00010002 SoundController App
+0x00010101 SoundController USB Firmware
 ```
 
 The updater detects installed apps and connected USB devices first, then matches those detected product IDs against the manifest.

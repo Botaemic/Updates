@@ -1,4 +1,4 @@
-# SoundController Companion App 0.1.4
+# SoundController App 0.1.4
 
 ## Changes
 
