@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "generatedAtUtc": "2026-05-22T00:00:00Z",
+  "generatedAtUtc": "2026-05-23T00:00:00Z",
   "products": {
     "companionApp": {
       "name": "SoundController Companion App",

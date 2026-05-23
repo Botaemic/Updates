@@ -8,10 +8,10 @@
 
 ## Artifact
 
-The future online server should place the companion app installer here:
+If this app version is published as an update, place the companion app installer here:
 
 ```text
 setup.exe
 ```
 
-The `manifest.json` entry should include the real `sha256` and `sizeBytes` values before this is used for real updates.
+The `manifest.json` entry must include the real `sha256` and `sizeBytes` values before this is offered to users.

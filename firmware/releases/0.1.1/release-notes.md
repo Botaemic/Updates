@@ -6,10 +6,10 @@
 
 ## Artifact
 
-The future online server should place the firmware HEX here:
+The firmware HEX for this release is published here:
 
 ```text
 SoundController.hex
 ```
 
-The `manifest.json` entry should include the real `sha256` and `sizeBytes` values before this is used for real updates.
+The `manifest.json` entry must include the matching `sha256` and `sizeBytes` values before this is offered to users.
