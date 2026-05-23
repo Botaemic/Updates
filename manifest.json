@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "channel": "stable",
+  "generatedAtUtc": "2026-05-22T00:00:00Z",
+  "products": {
+    "companionApp": {
+      "name": "SoundController Companion App",
+      "latestVersion": "0.1.6",
+      "minimumSupportedVersion": "0.1.0",
+      "autoInstallDefault": false,
+      "releaseNotes": "app/releases/0.1.6/release-notes.md",
+      "artifacts": [
+        {
+          "type": "installer",
+          "fileName": "setup.exe",
+          "url": "app/releases/0.1.6/setup.exe",
+          "sha256": "",
+          "sizeBytes": 0
+        }
+      ]
+    },
+    "firmware": {
+      "name": "SoundController USB Firmware",
+      "latestVersion": "0.1.2",
+      "minimumSupportedVersion": "0.1.0",
+      "autoInstallDefault": false,
+      "releaseNotes": "firmware/releases/0.1.2/release-notes.md",
+      "artifacts": [
+        {
+          "type": "intelHex",
+          "fileName": "SoundController.hex",
+          "url": "firmware/releases/0.1.2/SoundController.hex",
+          "sha256": "71ebb328700c255de8a3d4cf6f8f01863e649321ad39c1ffc355efc7980e0f2b",
+          "sizeBytes": 24743
+        }
+      ]
+    }
+  }
+}
