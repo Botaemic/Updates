@@ -1,7 +1,8 @@
-# Botaemic SoundController Update Feed
+# Botaemic Updates
 
+This repository hosts update feeds and release artifacts for Botaemic projects.
 
-The app reads:
+The current SoundController app reads:
 
 ```text
 manifest.json
@@ -30,13 +31,13 @@ Botaemic/Updates
   firmware/
 ```
 
-If GitHub Pages is enabled for the repository, the app should use:
+If GitHub Pages is enabled for the repository, SoundController should use:
 
 ```text
 https://botaemic.github.io/Updates/manifest.json
 ```
 
-If GitHub Pages is not enabled yet, the app can use the raw GitHub URL:
+If GitHub Pages is not enabled yet, SoundController can use the raw GitHub URL:
 
 ```text
 https://raw.githubusercontent.com/Botaemic/Updates/main/manifest.json
@@ -60,5 +61,4 @@ The update manager already supports both relative URLs and full HTTPS URLs.
 
 
 ## Current Published Firmware
-
 
