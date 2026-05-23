@@ -1,26 +1,56 @@
 # Botaemic Updates
 
-This repository hosts update feeds and release artifacts for Botaemic projects.
+This repository hosts static update feeds and release artifacts for Botaemic projects.
 
-The current SoundController app reads:
-
-```text
-manifest.json
-```
-
-The manifest then points to release notes and update artifacts with relative paths, for example:
+The current SoundController app should read the raw GitHub manifest URL:
 
 ```text
-firmware/soundcontroller/releases/0.1.2/SoundController.hex
+https://raw.githubusercontent.com/Botaemic/Updates/main/manifest.json
 ```
 
-## Recommended GitHub Setup
-
-Publish the contents of this folder to:
+GitHub Pages currently publishes from `docs`, so the top-level manifest is not available at:
 
 ```text
-https://github.com/Botaemic/Updates
+https://botaemic.github.io/Updates/manifest.json
 ```
+
+That Pages URL only works if Pages is later changed to publish from the repository root.
+
+## Schema Version 2
+
+`manifest.json` uses `schemaVersion` 2. Products are keyed by numeric product IDs instead of names like `companionApp` or `firmware`.
+
+Product IDs use this 32-bit format:
+
+```text
+0xPPPPVVTT
+```
+
+- `PPPP` is the project ID.
+- `VV` is the hardware or product variant. `00` means generic or all variants.
+- `TT` is the target type.
+
+Target types:
+
+```text
+0x01 Firmware
+0x02 Windows companion app
+0x03 Bootloader
+0x04 Hardware definition/config package
+0x05 Documentation package
+0x06 Calibration/config data
+```
+
+Current SoundController product IDs:
+
+```text
+0x00010002 SoundController Companion App
+0x00010101 SoundController USB Firmware, hardware variant 1
+```
+
+The updater detects installed apps and connected USB devices first, then matches those detected product IDs against the manifest.
+
+## Repository Shape
 
 Recommended repository shape on GitHub:
 
@@ -36,6 +66,7 @@ Botaemic/Updates
       releases/
   docs/
     index.html
+    schema-v2.md
 ```
 
 GitHub Pages can publish the neutral landing page from the `docs` folder:
@@ -44,33 +75,18 @@ GitHub Pages can publish the neutral landing page from the `docs` folder:
 https://botaemic.github.io/Updates/
 ```
 
-Because GitHub Pages is publishing from `docs`, top-level feed files are not served by that Pages URL. SoundController should use the raw GitHub manifest URL:
+## Relative And Absolute Artifacts
 
-```text
-https://raw.githubusercontent.com/Botaemic/Updates/main/manifest.json
+Artifacts can use paths relative to `baseUrl`:
+
+```json
+"url": "firmware/soundcontroller/releases/0.1.2/SoundController.hex"
 ```
 
-If GitHub Pages is later changed to publish from the repository root, SoundController can use:
-
-```text
-https://botaemic.github.io/Updates/manifest.json
-```
-
-
-
-## GitHub Releases
-
-GitHub Releases are useful for larger downloadable files like `setup.exe`.
-
-If an artifact is uploaded to a GitHub Release, put its full download URL in `manifest.json` instead of a relative path:
+They can also use full HTTPS URLs, for example GitHub Release assets:
 
 ```json
 "url": "https://github.com/Botaemic/Updates/releases/download/v0.1.8/setup.exe"
 ```
 
-The update manager already supports both relative URLs and full HTTPS URLs.
-
-## Update Rules
-
-
-## Current Published Firmware
+The update manager supports both. It must verify SHA-256 before installing or flashing an artifact. Artifacts with an empty `sha256` are intentionally blocked until the hash is filled in.

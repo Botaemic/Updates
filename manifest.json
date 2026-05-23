@@ -1,29 +1,71 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "channel": "stable",
   "generatedAtUtc": "2026-05-23T00:00:00Z",
+  "baseUrl": "https://raw.githubusercontent.com/Botaemic/Updates/main/",
+  "productIdFormat": {
+    "description": "32-bit numeric product ID encoded as 0xPPPPVVTT",
+    "layout": {
+      "PPPP": "Project ID",
+      "VV": "Hardware/product variant. 00 = generic/all variants.",
+      "TT": "Target type"
+    },
+    "targetTypes": {
+      "0x01": "Firmware",
+      "0x02": "Windows companion app",
+      "0x03": "Bootloader",
+      "0x04": "Hardware definition/config package",
+      "0x05": "Documentation package",
+      "0x06": "Calibration/config data"
+    }
+  },
+  "projects": {
+    "0x0001": {
+      "name": "SoundController",
+      "slug": "soundcontroller"
+    }
+  },
   "products": {
-    "companionApp": {
+    "0x00010002": {
+      "productId": "0x00010002",
+      "projectId": "0x0001",
+      "hardwareVariant": "0x00",
+      "targetType": "0x02",
       "name": "SoundController Companion App",
+      "category": "app",
       "latestVersion": "0.1.6",
+      "latestVersionNumber": "0x00000106",
       "minimumSupportedVersion": "0.1.0",
+      "minimumSupportedVersionNumber": "0x00000100",
       "autoInstallDefault": false,
+      "requiresAdmin": true,
       "releaseNotes": "app/soundcontroller/releases/0.1.6/release-notes.md",
       "artifacts": [
         {
           "type": "installer",
+          "installerType": "exe",
           "fileName": "setup.exe",
           "url": "app/soundcontroller/releases/0.1.6/setup.exe",
           "sha256": "",
-          "sizeBytes": 0
+          "sizeBytes": 0,
+          "installArguments": "",
+          "silentInstallArguments": "/quiet"
         }
       ]
     },
-    "firmware": {
-      "name": "SoundController USB Firmware",
+    "0x00010101": {
+      "productId": "0x00010101",
+      "projectId": "0x0001",
+      "hardwareVariant": "0x01",
+      "targetType": "0x01",
+      "name": "SoundController USB Firmware - Hardware Variant 1",
+      "category": "firmware",
       "latestVersion": "0.1.2",
+      "latestVersionNumber": "0x00000102",
       "minimumSupportedVersion": "0.1.0",
+      "minimumSupportedVersionNumber": "0x00000100",
       "autoInstallDefault": false,
+      "requiresAdmin": false,
       "releaseNotes": "firmware/soundcontroller/releases/0.1.2/release-notes.md",
       "artifacts": [
         {
