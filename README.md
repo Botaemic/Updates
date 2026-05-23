@@ -11,7 +11,7 @@ manifest.json
 The manifest then points to release notes and update artifacts with relative paths, for example:
 
 ```text
-firmware/releases/0.1.2/SoundController.hex
+firmware/soundcontroller/releases/0.1.2/SoundController.hex
 ```
 
 ## Recommended GitHub Setup
@@ -28,7 +28,11 @@ Recommended repository shape on GitHub:
 Botaemic/Updates
   manifest.json
   app/
+    soundcontroller/
+      releases/
   firmware/
+    soundcontroller/
+      releases/
 ```
 
 If GitHub Pages is enabled for the repository, SoundController should use:
@@ -61,4 +65,3 @@ The update manager already supports both relative URLs and full HTTPS URLs.
 
 
 ## Current Published Firmware
-
