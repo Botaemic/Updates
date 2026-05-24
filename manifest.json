@@ -1,81 +1,91 @@
 {
-  "schemaVersion": 2,
-  "channel": "stable",
-  "generatedAtUtc": "2026-05-23T00:00:00Z",
-  "baseUrl": "https://raw.githubusercontent.com/Botaemic/Updates/main/",
-  "productIdFormat": {
-    "description": "32-bit numeric product ID encoded as 0xPPPPVVTT",
-    "layout": {
-      "PPPP": "Project ID",
-      "VV": "Hardware/product variant. 00 = generic/all variants.",
-      "TT": "Target type"
-    },
-    "targetTypes": {
-      "0x01": "Firmware",
-      "0x02": "Windows companion app",
-      "0x03": "Bootloader",
-      "0x04": "Hardware definition/config package",
-      "0x05": "Documentation package",
-      "0x06": "Calibration/config data"
-    }
-  },
-  "projects": {
-    "0x0001": {
-      "name": "SoundController",
-      "slug": "soundcontroller"
-    }
-  },
-  "products": {
-    "0x00010002": {
-      "productId": "0x00010002",
-      "projectId": "0x0001",
-      "hardwareVariant": "0x00",
-      "targetType": "0x02",
-      "name": "SoundController App",
-      "category": "app",
-      "latestVersion": "0.1.8",
-      "latestVersionNumber": "0x00000108",
-      "minimumSupportedVersion": "0.1.0",
-      "minimumSupportedVersionNumber": "0x00000100",
-      "autoInstallDefault": false,
-      "requiresAdmin": true,
-      "releaseNotes": "app/soundcontroller/releases/0.1.8/release-notes.md",
-      "artifacts": [
-        {
-          "type": "installer",
-          "installerType": "exe",
-          "fileName": "setup.exe",
-          "url": "app/soundcontroller/releases/0.1.8/setup.exe",
-          "sha256": "",
-          "sizeBytes": 0,
-          "installArguments": "",
-          "silentInstallArguments": "/quiet"
-        }
-      ]
-    },
-    "0x00010101": {
-      "productId": "0x00010101",
-      "projectId": "0x0001",
-      "hardwareVariant": "0x01",
-      "targetType": "0x01",
-      "name": "SoundController USB Firmware",
-      "category": "firmware",
-      "latestVersion": "0.1.3",
-      "latestVersionNumber": "0x00000103",
-      "minimumSupportedVersion": "0.1.0",
-      "minimumSupportedVersionNumber": "0x00000100",
-      "autoInstallDefault": false,
-      "requiresAdmin": false,
-      "releaseNotes": "firmware/soundcontroller/releases/0.1.3/release-notes.md",
-      "artifacts": [
-        {
-          "type": "intelHex",
-          "fileName": "SoundController.hex",
-          "url": "firmware/soundcontroller/releases/0.1.3/SoundController.hex",
-          "sha256": "715e43d3a194ddf6302f842cefee2f28978ed058fc093a00c505c1453640a64e",
-          "sizeBytes": 24993
-        }
-      ]
-    }
-  }
+    "schemaVersion":  2,
+    "channel":  "stable",
+    "generatedAtUtc":  "2026-05-24T18:18:17Z",
+    "baseUrl":  "https://raw.githubusercontent.com/Botaemic/Updates/main/",
+    "productIdFormat":  {
+                            "description":  "32-bit numeric product ID encoded as 0xPPPPVVTT",
+                            "layout":  {
+                                           "PPPP":  "Project ID",
+                                           "VV":  "Hardware/product variant. 00 = generic/all variants.",
+                                           "TT":  "Target type"
+                                       },
+                            "targetTypes":  {
+                                                "0x01":  "Firmware",
+                                                "0x02":  "Windows companion app",
+                                                "0x03":  "Bootloader",
+                                                "0x04":  "Hardware definition/config package",
+                                                "0x05":  "Documentation package",
+                                                "0x06":  "Calibration/config data"
+                                            }
+                        },
+    "projects":  {
+                     "0x0001":  {
+                                    "name":  "SoundController",
+                                    "slug":  "soundcontroller"
+                                }
+                 },
+    "products":  {
+                     "0x00010002":  {
+                                        "productId":  "0x00010002",
+                                        "projectId":  "0x0001",
+                                        "hardwareVariant":  "0x00",
+                                        "targetType":  "0x02",
+                                        "name":  "SoundController App",
+                                        "category":  "app",
+                                        "latestVersion":  "0.1.10",
+                                        "latestVersionNumber":  "0x0000010A",
+                                        "minimumSupportedVersion":  "0.1.0",
+                                        "minimumSupportedVersionNumber":  "0x00000100",
+                                        "autoInstallDefault":  false,
+                                        "requiresAdmin":  true,
+                                        "releaseNotes":  "app/soundcontroller/releases/0.1.10/release-notes.md",
+                                        "artifacts":  [
+                                                          {
+                                                              "type":  "installer",
+                                                              "installerType":  "msi",
+                                                              "fileName":  "SoundController-App-0.1.10.msi",
+                                                              "url":  "app/soundcontroller/releases/0.1.10/SoundController-App-0.1.10.msi",
+                                                              "sha256":  "6f4c59e0db44ef21c77117461d0c7b4e0817900428695983a54f6668a5551999",
+                                                              "sizeBytes":  1030144,
+                                                              "installArguments":  "",
+                                                              "silentInstallArguments":  "/quiet"
+                                                          },
+                                                          {
+                                                              "type":  "bootstrapper",
+                                                              "installerType":  "exe",
+                                                              "fileName":  "SoundController-App-0.1.10-Setup.exe",
+                                                              "url":  "app/soundcontroller/releases/0.1.10/SoundController-App-0.1.10-Setup.exe",
+                                                              "sha256":  "eb1a1503d0c913672962361aad6a68da1ebcd97aade750df62b6c8c78646f469",
+                                                              "sizeBytes":  702976,
+                                                              "installArguments":  "",
+                                                              "silentInstallArguments":  ""
+                                                          }
+                                                      ]
+                                    },
+                     "0x00010101":  {
+                                        "productId":  "0x00010101",
+                                        "projectId":  "0x0001",
+                                        "hardwareVariant":  "0x01",
+                                        "targetType":  "0x01",
+                                        "name":  "SoundController USB Firmware",
+                                        "category":  "firmware",
+                                        "latestVersion":  "0.1.3",
+                                        "latestVersionNumber":  "0x00000103",
+                                        "minimumSupportedVersion":  "0.1.0",
+                                        "minimumSupportedVersionNumber":  "0x00000100",
+                                        "autoInstallDefault":  false,
+                                        "requiresAdmin":  false,
+                                        "releaseNotes":  "firmware/soundcontroller/releases/0.1.3/release-notes.md",
+                                        "artifacts":  [
+                                                          {
+                                                              "type":  "intelHex",
+                                                              "fileName":  "SoundController.hex",
+                                                              "url":  "firmware/soundcontroller/releases/0.1.3/SoundController.hex",
+                                                              "sha256":  "715e43d3a194ddf6302f842cefee2f28978ed058fc093a00c505c1453640a64e",
+                                                              "sizeBytes":  24993
+                                                          }
+                                                      ]
+                                    }
+                 }
 }
