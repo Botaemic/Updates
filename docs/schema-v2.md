@@ -84,7 +84,7 @@ Common artifact fields:
 
 Installer artifacts can also include:
 
-- `installerType`: installer format, for example `exe`.
+- `installerType`: installer format, for example `msi`.
 - `installArguments`: normal install arguments.
 - `silentInstallArguments`: unattended install arguments.
 

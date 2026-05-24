@@ -1,7 +1,7 @@
 {
     "schemaVersion":  2,
     "channel":  "stable",
-    "generatedAtUtc":  "2026-05-24T18:18:17Z",
+    "generatedAtUtc":  "2026-05-24T18:31:22Z",
     "baseUrl":  "https://raw.githubusercontent.com/Botaemic/Updates/main/",
     "productIdFormat":  {
                             "description":  "32-bit numeric product ID encoded as 0xPPPPVVTT",
@@ -46,7 +46,7 @@
                                                               "installerType":  "msi",
                                                               "fileName":  "SoundController-App-0.1.10.msi",
                                                               "url":  "app/soundcontroller/releases/0.1.10/SoundController-App-0.1.10.msi",
-                                                              "sha256":  "6f4c59e0db44ef21c77117461d0c7b4e0817900428695983a54f6668a5551999",
+                                                              "sha256":  "50d3a7d40b3865a7bdfbb5c36066e4517985eb54228180908a788d1493437905",
                                                               "sizeBytes":  1030144,
                                                               "installArguments":  "",
                                                               "silentInstallArguments":  "/quiet"
@@ -56,7 +56,7 @@
                                                               "installerType":  "exe",
                                                               "fileName":  "SoundController-App-0.1.10-Setup.exe",
                                                               "url":  "app/soundcontroller/releases/0.1.10/SoundController-App-0.1.10-Setup.exe",
-                                                              "sha256":  "eb1a1503d0c913672962361aad6a68da1ebcd97aade750df62b6c8c78646f469",
+                                                              "sha256":  "cb65123cb6b805bfab5a996a6e53c9df0f500444b2bd8b5178b5efa96295d21e",
                                                               "sizeBytes":  702976,
                                                               "installArguments":  "",
                                                               "silentInstallArguments":  ""

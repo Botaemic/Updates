@@ -86,7 +86,7 @@ Artifacts can use paths relative to `baseUrl`:
 They can also use full HTTPS URLs, for example GitHub Release assets:
 
 ```json
-"url": "https://github.com/Botaemic/Updates/releases/download/v0.1.8/setup.exe"
+"url": "https://github.com/Botaemic/Updates/releases/download/v0.1.8/SoundController-App-0.1.8.msi"
 ```
 
 The update manager supports both. It must verify SHA-256 before installing or flashing an artifact. Artifacts with an empty `sha256` are intentionally blocked until the hash is filled in.
